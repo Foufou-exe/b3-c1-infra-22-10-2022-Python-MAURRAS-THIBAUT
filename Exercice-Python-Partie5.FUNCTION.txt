@@ -1,0 +1,101 @@
+
+2. def spam():
+  """Prints 'Eggs!' to the console."""
+  print "Eggs!"
+  
+3. square(10)
+
+4. def power(base, exponent):  # Add your parameters here!
+  result = base ** exponent
+  print "%d to the power of %d is %d." % (base, exponent, result)
+
+power(37, 4)  # Add your arguments here!
+
+5. def deserves_another(n):
+  return one_good_turn(n) + 2
+  
+6. def cube(n):
+  return n**3
+
+def by_three(number):
+  if number%3 == 0:
+    return cube(number)
+  else:
+    return False
+ 
+7. import this
+# Ask Python to print sqrt(25) on line 3.
+
+print sqrt(25)
+
+8. import math
+
+print math.sqrt(25)
+
+9. from math import sqrt
+
+10. from math import *
+
+13.  maximum = max(3,4,5)
+
+14. minimum = min(1,2,3)
+
+15. absolute = abs(-42)
+
+16. print(type(0))
+print(type(3.5))
+print(type("str"))
+
+17. def shut_down(s):
+  if s == "yes":
+    return "Shutting down"
+  elif s == "no":
+    return "Shutdown aborted"
+  else:
+    return "Sorry"
+  
+18. from math import *
+
+print(sqrt(13689))
+
+19. def distance_from_zero(n):
+  if type(n) == int or type(n) == float:
+    return abs(n)
+  else:
+    return "Nope"
+    
+    
+Partie 2
+
+1. def answer():
+  return 42
+  
+2. def hotel_cost(nights):
+  return 140 * nights
+  
+3. def plane_ride_cost(city):
+  if city == "Charlotte":
+    return 183
+  if city == "Tampa":
+    return 220
+  if city == "Pittsburgh":
+    return 222
+  if city == "Los Angeles":
+    return 475
+    
+4. def rental_car_cost(days):
+  if days >= 7:
+    return (days*40)-50
+  elif days >= 3:
+    return (days*40)-20
+  else:
+    return days*40
+    
+5. def trip_cost(city, days):
+  return rental_car_cost(days) + hotel_cost(days - 1) + plane_ride_cost(city)
+  
+6. def trip_cost(city, days, spending_money):
+  return rental_car_cost(days) + hotel_cost(days - 1) + plane_ride_cost(city) + spending_money
+  
+7. print(trip_cost("Los Angeles", 5, 600))
+
